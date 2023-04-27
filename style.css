@@ -1,0 +1,310 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(26, 25, 25);
+}
+
+#mainContainer {
+  height: 85vh;
+  width: 100%;
+}
+
+#mainContainer .container {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  padding-bottom: 200px;
+}
+#mainContainer .container .left {
+  width: 20%;
+  height: inherit;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  border-right: 2px solid black;
+}
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding-left: 80px;
+  padding-top: 20px;
+  color: green;
+  font-size: 40px;
+  border-bottom: 2px solid green;
+  border-radius: 100%;
+  /* color: white; */
+}
+h1:hover {
+  color: rgb(27, 225, 27);
+}
+
+#mainContainer .container .right {
+  padding-left: 290px;
+  width: 100%;
+  overflow-y: scroll;
+  height: 85vh;
+  /* margin-bottom: -20px; */
+  /* background-color: red; */
+  /* margin-bottom: 200px; */
+}
+
+.right::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+
+.right::-webkit-scrollbar-thumb {
+  background-color: grey;
+}
+
+.right::-webkit-scrollbar-button {
+  background-color: green;
+  color: red;
+}
+
+.right::-webkit-scrollbar-corner {
+  color: yellow;
+}
+
+#mainContainer .container .right .audioList img {
+  height: 180px;
+  width: 200px;
+}
+h6 {
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.audioList {
+  padding: 30px;
+  margin-bottom: 20vh;
+  width: 250px;
+  height: 250px;
+  display: grid;
+  grid-template-rows: 250px 250px 250px 250px;
+  grid-template-columns: 250px 250px 250px 250px;
+  row-gap: 60px;
+  column-gap: 60px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 2px solid gray;
+}
+#footer {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer .btns {
+  background-color: rgb(19, 18, 18);
+  height: 10vh;
+  width: 70%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(65, 62, 62);
+  /* border: 3px solid green; */
+  margin-bottom: 10px;
+  border-top: 2px solid rgb(73, 203, 13);
+}
+#footer .icons i {
+  font-size: 17px;
+  /* border: 1px solid red; */
+  cursor: pointer;
+}
+button {
+  outline: none;
+}
+#footer .icons #backward {
+  height: 50px;
+  width: 100px;
+  border: none;
+  background-color: rgb(19, 18, 18);
+  color: white;
+}
+
+#footer .icons #backward:hover {
+  color: green;
+}
+
+#footer .icons #forward {
+  height: 50px;
+  width: 100px;
+  border: none;
+  background-color: rgb(19, 18, 18);
+  color: white;
+}
+#footer .icons #forward:hover {
+  color: green;
+}
+
+#footer .icons #play {
+  height: 50px;
+  width: 100px;
+  border: none;
+  background-color: rgb(19, 18, 18);
+  color: white;
+}
+
+#footer .icons #play:hover {
+  color: green;
+  border-radius: 50px 50px 50px 50px;
+  /* border: 1px solid red; */
+}
+
+#footer .icons #pause {
+  height: 50px;
+  width: 100px;
+  border: none;
+  background-color: rgb(19, 18, 18);
+  color: white;
+}
+#footer .icons #pause:hover {
+  color: green;
+}
+
+#footer .icons #Repeat {
+  height: 50px;
+  width: 100px;
+  border: none;
+  background-color: rgb(19, 18, 18);
+  color: white;
+}
+#footer .icons #Repeat:hover {
+  color: green;
+}
+#footer .icons #Suffle {
+  height: 50px;
+  width: 100px;
+  border: none;
+  background-color: rgb(19, 18, 18);
+  color: white;
+}
+
+#footer .icons #Suffle:hover {
+  color: green;
+}
+
+img {
+  padding: 5px;
+  height: 79px;
+}
+#dis-name {
+  color: gray;
+}
+
+#audio {
+  height: 120px;
+  width: 500px;
+  display: none;
+  position: relative;
+  left: 35%;
+  top: -45px;
+}
+
+.left-section {
+  margin-top: 40px;
+  padding: 20px;
+  height: 500px;
+  width: 300px;
+  /* border: 2px solid green; */
+}
+
+.home a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  gap: 30px;
+  height: 40px;
+  /* border: 2px solid red; */
+  width: 270px;
+  display: flex;
+  color: gray;
+}
+
+.home a:hover {
+  color: white;
+}
+
+.search a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  gap: 30px;
+  height: 40px;
+  /* border: 2px solid red; */
+  width: 270px;
+  display: flex;
+  color: gray;
+}
+.search a:hover {
+  color: white;
+}
+
+.library a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  gap: 30px;
+  height: 40px;
+  /* border: 2px solid red; */
+  width: 270px;
+  display: flex;
+  color: gray;
+}
+
+.library a:hover {
+  color: white;
+}
+
+.sq-plus a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  gap: 30px;
+  height: 40px;
+  /* border: 2px solid red; */
+  width: 270px;
+  display: flex;
+  color: gray;
+}
+.sq-plus a:hover {
+  color: white;
+}
+
+.like a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  gap: 30px;
+  height: 40px;
+  /* border: 2px solid red; */
+  width: 270px;
+  display: flex;
+  color: gray;
+  border-bottom: 1px solid rgb(94, 91, 91);
+}
+.like a:hover {
+  color: white;
+}
+
+/* play */
